@@ -3,40 +3,165 @@
 <head>
 	<link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
 	<link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
-	<title>Colmar Academy</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<title>Combless Academy</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<!--Header bar with navigation-->
-	<header class="row">
-		<div class="container row">
-			<div id="logo">
-				<a class="row" href="#">
-					<img src="./resources/images/ic-logo.svg" alt="Colmar Academy home page">
-					<span>Colmar Academy</span>
-				</a>
-			</div>
 
-			<nav class="row">
-				<a class="nav-home row" href="#"><img class="nav-icon" src="./resources/images/ic-logo.svg" alt="Colmar Academy home page"><span class="nav-text">Colmar Academy</span></a>
-				<a class="row" href="#"><img class="nav-icon" src="./resources/images/ic-on-campus.svg" alt="On Campus"><span class="nav-text">On Campus</span></a>
-				<a class="row" href="#"><img class="nav-icon" src="./resources/images/ic-online.svg" alt="Online Companies"><span class="nav-text">Online Companies</span></a>
-				<a class="row" href="#"><img class="nav-icon" src="./resources/images/ic-login.svg" alt="Sign In"><span class="nav-text">Sign In</span></a>
+	<!--Header bar with navigation-->
+	<header>
+		<div class="container flex">
+			<a id="logo" href="#"><img src="./resources/images/logo.svg" alt="Combless Academy home page"></a>
+
+			<nav>
+				<div class="nav-lg">
+					<a class="btn btn-clear" role="button" href="#">Learn</a><a class="btn btn-clear" role="button" href="#">Get Involved</a><a class="btn btn-clear" role="button" href="#">Apply</a>
+				</div>
+
+				<div class="nav-sm">
+					<a class="btn btn-clear" role="button" href="#"><img src="./resources/images/ic-ca-logo.svg" alt="Combless Academy home page"></a>
+					<a class="btn btn-clear" role="button" href="#"><i class="em em-notebook"></i></a>
+					<a class="btn btn-clear" role="button" href="#"><i class="em em-two_women_holding_hands"></i></a>
+					<a class="btn btn-clear" role="button" href="#"><i class="em em-raising_hand"></i></a>
+				</div>
 			</nav>
+
 		</div>
 	<!--End of header-->
 	</header>
 
+
 	<!--Main content-->
-	<main class="container">
+	<main>
+
+		<!--Hero section-->
+		<section class="section-hero">
+			<div class="container flex">
+				<div class="col-40">
+					<h1>Get your degree in side braid.</h1>
+					<h3>The internet's only source for side braid certification.</h3>
+					<a href="#" role="button" class="btn btn-primary btn-wide">Side braid, that's genius!</a>
+				</div>
+			</div>
+		</section>
+
+		<!--Articles section-->
+		<section class="section-articles container">
+
+				<div class="col-60">
+					<article class="article-item featured">
+							<figure>
+								<img class="fit-width" src="./resources/images/article_jenna.jpg" alt="YouTube personality Jenna Marbles, with random items braided into her hair.">
+							</figure>
+							<figcaption>
+								<h3><a href="https://www.youtube.com/watch?v=YllrAmXfrME" target="_blank">Braiding Things Into My Hair</a></h3>
+								<blockquote>
+									<p>"Why don't we braid other things into our hair? For years, if I didn't have a purse or like, pockets, I'd try to stuff stuff in my bra or like, in my waistband... why have I never thought to just braid it into my hair?"</p>
+									<cite>- Jenna Marbles</cite>
+								</blockquote>
+							</figcaption>
+					</article>
+				</div>
+
+				<aside class="col-40">
+					<article class="article-item feed">
+							<figure>
+								<img class="fit-width" src="./resources/images/article_messy.jpg" alt="Woman with messy side braid">
+							</figure>
+							<figcaption>
+								<h3><a href="#">Get a Messy Side Braid in 4 Easy Steps</a></h3>
+								<p>Start off by wrapping sections of your hair around a downward-facing curling wand... <a href="#">Read more</a></p>
+							</figcaption>
+					</article>
+					<article class="article-item feed">
+							<figure>
+								<img class="fit-width" src="./resources/images/article_summer.jpg" alt="Woman with small side braids outside in the sun.">
+							</figure>
+							<figcaption>
+								<h3><a href="#">Hairstyles for Hot Weather</a></h3>
+								<p>The low, messy braid is one of our all-time fave “Woke Up Like This" looks... <a href="#">Read more</a></p>
+							</figcaption>
+					</article>
+					<article class="article-item feed">
+							<figure>
+								<img class="fit-width" src="./resources/images/article_far.jpg" alt="Actress Gwyneth Paltrow with small cornrow-style side braids.">
+							</figure>
+							<figcaption>
+								<h3><a href="#">When Side Braid Goes Too Far</a></h3>
+								<p>Contrary to popular belief, it is possible to side braid too hard... <a href="#">Read more</a></p>
+							</figcaption>
+					</article>
+				</aside>
+
+		</section>
+
+		<!--Classes section-->
+		<section class="section-classes">
+			<div class="container">
+				<h2 class="center-text">Featured Classes</h2>
+				<div class="classes">
+					<div class="class-item">
+						<figure>
+							<img class="fit-width" src="./resources/images/class_simple.gif" alt="Woman with a simple side braid, nodding confidently.">
+						</figure>
+						<figcaption>
+							<h3>The basic side braid</h3>
+							<p>A great place to learn basic braiding techniques.</p>
+						</figcaption>
+					</div>
+					<div class="class-item">
+						<figure>
+							<img class="fit-width" src="./resources/images/class_quick.gif" alt="Woman snapping her fingers to instantly transform her hair into a side braid.">
+						</figure>
+						<figcaption>
+							<h3>Speedy side braids</h3>
+							<p>Helpful hacks for the busiest side-braider</p>
+						</figcaption>
+					</div>
+					<div class="class-item">
+						<figure>
+							<img class="fit-width" src="./resources/images/class_advanced.gif" alt="Woman braiding a complicated side braid.">
+						</figure>
+						<figcaption>
+							<h3>Advanced side braids</h3>
+							<p>For a more experienced side-braider</p>
+						</figcaption>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Graduates section-->
+		<section class="section-grads">
+			<div class="container">
+				<h2 class="center-text">Our Graduates</h2>
+				<div class="cols">
+					<div class="col-60">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/FYfZwDorJsw?start=70" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<aside id="twitter" class="col-40">
+						<a class="twitter-timeline" data-chrome="noheader, nofooter" href="https://twitter.com/search?q=%22side%20braid%22" data-widget-id="858878968673427456">Tweets about "side braid"</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</aside>
+				</div>
+			</div>
+		</section>
 
 	<!--End of main content-->
 	</main>
 
 	<!--Footer-->
-	<footer class="container">
-
+	<footer>
+		<div class="container flex">
+			<span>&copy; 2016 Combless Academy. All rights reserved.</span>
+			<nav>
+				<a class="btn btn-clear" role="button" href="#">Terms</a>
+				<a class="btn btn-clear" role="button" href="#">Privacy</a>
+			</nav>
+		</div>
 	</footer>
+
 </body>
 </html>
